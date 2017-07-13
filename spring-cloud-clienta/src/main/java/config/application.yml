@@ -4,6 +4,8 @@ eureka:
       defaultZone: http://localhost:8888/eureka/
 server:
   port: 8880
+#  port: 8881
+#  port: 8882
 spring:
   application:
     name: client-a
