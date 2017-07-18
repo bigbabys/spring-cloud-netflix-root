@@ -38,6 +38,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 		</dependency>
+		<!-- zuul动态路由扩展 -->
+		<dependency>
+			<groupId>com.lorne</groupId>
+			<artifactId>spring-cloud-zuul-x</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
