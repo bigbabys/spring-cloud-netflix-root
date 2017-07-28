@@ -1,5 +1,6 @@
 package com.lorne.zuul.bean;
 
+import java.util.List;
 import java.util.Set;
 
 public class ZuulRouteEntity {
@@ -21,6 +22,8 @@ public class ZuulRouteEntity {
 	private boolean retryable;
 	
 	private boolean stripPrefix;
+	
+	private List<IZuulRouteRule> ruleList;
 	
 	public String getPath() {
 		return path;
@@ -92,6 +95,14 @@ public class ZuulRouteEntity {
 
 	public void setStripPrefix(boolean stripPrefix) {
 		this.stripPrefix = stripPrefix;
+	}
+
+	public List<IZuulRouteRule> getRuleList() {
+		return ruleList;
+	}
+
+	public void setRuleList(List<IZuulRouteRule> ruleList) {
+		this.ruleList = ruleList;
 	}
 	
 }
